@@ -10,7 +10,7 @@ using SimpleCRM.Context;
 namespace SimpleCRM.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240929172017_InitialCreate")]
+    [Migration("20240930154441_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -29,7 +29,7 @@ namespace SimpleCRM.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ImmagePath")
+                    b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
